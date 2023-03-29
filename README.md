@@ -30,7 +30,16 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>React and redux</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+<details>
+  <summary>Add book , Remove Book</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
