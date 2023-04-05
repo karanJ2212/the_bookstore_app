@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../../redux/books/booksSlice';
 
-export default function Book({ title, author }) {
+export default function Book({ title, author, itemID }) {
+  const dispatch = useDispatch();
+  const handleRemove = (event) => {
+    event.preventDefault();
+    dispatch(removeBook(itemID));
+  };
+
   return (
     <div>
       <div className="book">
@@ -13,7 +21,7 @@ export default function Book({ title, author }) {
               <button className="button-outline" type="button">
                 Comments
               </button>
-              <button className="button-outline" type="button">
+              <button className="button-outline" type="button" onClick={handleRemove}>
                 remove
               </button>
 
@@ -30,4 +38,8 @@ export default function Book({ title, author }) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  itemID: PropTypes.string,
+};
+Book.defaultProps = {
+  itemID: '',
 };
