@@ -8,6 +8,7 @@ export default function Book({ title, author, itemID }) {
   const handleRemove = (event) => {
     event.preventDefault();
     dispatch(removeBook(itemID));
+    console.log('handleremove dispatch');
   };
 
   return (
