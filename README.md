@@ -45,6 +45,14 @@
   </ul>
 </details>
 
+### Key Features <a name="key-features"></a>
+
+<details>
+  <summary>Add book , Remove Book</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
 
 
@@ -132,7 +140,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+
 
 will use redux and api
 
@@ -152,7 +160,10 @@ Feel free to check the [issues page](https://github.com/karanJ2212/the_bookstore
 
 
 
+
+
 If you like this project please give star...
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +176,9 @@ I would like to thank Microverse Team
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/karanJ2212/the_bookstore_app/blob/add-license-1/License.md) licensed.
+
+This project is [MIT](https://github.com/karanJ2212/the_bookstore_app/blob/dev/License.md) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
