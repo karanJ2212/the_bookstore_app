@@ -150,22 +150,22 @@ Feel free to check the [issues page](https://github.com/karanJ2212/the_bookstore
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+
+If you like this project please give star...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+
 
 I would like to thank Microverse Team
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/karanJ2212/the_bookstore_app/blob/add-license-1/License.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
