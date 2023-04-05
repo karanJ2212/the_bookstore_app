@@ -20,17 +20,26 @@
 - [📝 License](#license)
 
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [the_bookstore_app] <a name="about-project"></a>
 
 
-**[Bookstore]** is an online  Application made with react and redux . It allows user to seemlessly manage online book collection
+**[the_bookstore_app]** is an online  Application made with react and redux . It allows user to seemlessly manage online book collection
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>React and redux</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+<details>
+  <summary>Add book , Remove Book</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
@@ -67,7 +76,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/karanJ2212/bookstore_app.git
+  git clone https://github.com/karanJ2212/the_bookstore_app.git
 ```
 
 ### Install
@@ -134,7 +143,7 @@ will use redux and api
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/karanJ2212/bookstore_app/issues).
+Feel free to check the [issues page](https://github.com/karanJ2212/the_bookstore_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +165,3 @@ I would like to thank Microverse Team
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](https://github.com/karanJ2212/the_bookstore_app/blob/redux_in_react/license.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
