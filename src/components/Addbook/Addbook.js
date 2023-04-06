@@ -14,7 +14,7 @@ export default function Addbook() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const newBook = { item_id: uuidv4(), ...book };
-    console.log(newBook);
+
     dispatch(addBook(newBook));
     setBook({ title: '', author: '', category: '' });
   };

@@ -8,17 +8,16 @@ export default function Booklist() {
   const dispatch = useDispatch();
   // const [books] = useState([{ title: 'react', author: 'karan' }]);
   const storebooks = useSelector((state) => state.books.books);
-  console.log(storebooks);
 
   useEffect(() => {
     dispatch(fetchBooksList());
-  }, []);
+  }, [dispatch]);
   return (
     <div className="booksContainer">
       <ul className="booklist">
         {storebooks.map((book) => (
           <li key={book.title + book.author}>
-            <Book title={book.title} author={book.author} itemID={book.item_id} />
+            <Book title={book.title} author={book.author} itemID={book.id} />
 
           </li>
         ))}

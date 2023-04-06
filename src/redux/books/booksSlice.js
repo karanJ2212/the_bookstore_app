@@ -72,7 +72,7 @@ export const addBook = createAsyncThunk(
     const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/d5U1jci9rU4Ou9MD2rVE/books', book);
     // return response.data;
     if (response.data && response.data === 'Created') {
-      return book;
+      return { ...book, id: book.item_id };
     }
     return null;
   },
@@ -81,8 +81,7 @@ export const addBook = createAsyncThunk(
 export const removeBook = createAsyncThunk(
   'books/removeBook',
   async (bookId) => {
-    await axios.DELETE(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/d5U1jci9rU4Ou9MD2rVE/books/${bookId}`);
-    console.log(bookId);
+    await axios.delete(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/d5U1jci9rU4Ou9MD2rVE/books/${bookId}`);
     return bookId;
   },
 );
