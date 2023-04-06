@@ -1,0 +1,42 @@
+.add-book {
+  padding: 1rem 0;
+}
+
+.new-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 32px;
+}
+
+.form-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.input:focus {
+  border: solid 1px #0290ff;
+}
+
+.input::placeholder {
+  color: #c4c4c4;
+}
+
+.title-input {
+  width: 50%;
+}
+
+.author-input {
+  width: 30%;
+}
+
+.add-book-btn {
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: white;
+}

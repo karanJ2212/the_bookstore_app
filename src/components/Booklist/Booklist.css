@@ -1,0 +1,18 @@
+.container {
+  padding: 4%;
+}
+
+.section-divider {
+  height: 0.125rem;
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 2.5rem 0 1.813rem 0;
+}
+
+.bookContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
