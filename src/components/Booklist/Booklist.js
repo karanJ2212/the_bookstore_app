@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Book from '../Book/Book';
 import Addbook from '../Addbook/Addbook';
 import { fetchBooksList } from '../../redux/books/booksSlice';
+import './Booklist.css';
 
 export default function Booklist() {
   const dispatch = useDispatch();
@@ -13,16 +14,17 @@ export default function Booklist() {
     dispatch(fetchBooksList());
   }, [dispatch]);
   return (
-    <div className="booksContainer">
-      <ul className="booklist">
-        {storebooks.map((book) => (
-          <li key={book.title + book.author}>
-            <Book title={book.title} author={book.author} itemID={book.id} />
+    <section className="bookContainer">
 
-          </li>
-        ))}
-      </ul>
+      {storebooks.map((book) => (
+        <li key={book.title + book.author}>
+          <Book title={book.title} author={book.author} itemID={book.id} category={book.category} />
+
+        </li>
+      ))}
+
+      <p className="section-divider" />
       <Addbook />
-    </div>
+    </section>
   );
 }

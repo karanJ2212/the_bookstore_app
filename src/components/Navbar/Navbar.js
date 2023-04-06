@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar() {
   return (
@@ -20,6 +21,9 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
+        <button className="avatar-btn" type="button">
+          <span className="material-icons">person</span>
+        </button>
       </nav>
     </div>
   );
