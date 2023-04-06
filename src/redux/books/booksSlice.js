@@ -1,46 +1,3 @@
-// import { createSlice } from '@reduxjs/toolkit';
-
-// const initialState = {
-//   books: [{
-//     item_id: 'item1',
-//     title: 'The Great Gatsby',
-//     author: 'John Smith',
-//     category: 'Fiction',
-//   },
-//   {
-//     item_id: 'item2',
-//     title: 'Anna Karenina',
-//     author: 'Leo Tolstoy',
-//     category: 'Fiction',
-//   },
-//   {
-//     item_id: 'item3',
-//     title: 'The Selfish Gene',
-//     author: 'Richard Dawkins',
-//     category: 'Nonfiction',
-//   }],
-// };
-
-// const booksSlice = createSlice({
-//   name: 'books',
-//   initialState,
-//   reducers: {
-//     addBook: (state, action) => ({
-//       ...state,
-//       books: [...state.books, action.payload],
-//     }),
-//     removeBook: (state, action) => ({
-//       ...state,
-//       books: state.books.filter((book) => book.itemID !== action.payload),
-//     }),
-//   },
-// });
-
-// export const { addBook, removeBook } = booksSlice.actions;
-// export default booksSlice.reducer;
-
-/// ////////////////////////////////////////////////////////////////////////////////////////////////
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -70,7 +27,7 @@ export const addBook = createAsyncThunk(
   'books/addBook',
   async (book) => {
     const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/d5U1jci9rU4Ou9MD2rVE/books', book);
-    // return response.data;
+
     if (response.data && response.data === 'Created') {
       return { ...book, id: book.item_id };
     }
@@ -118,6 +75,4 @@ export const booksSlice = createSlice({
   },
 });
 
-// Export Actions and Reducer
-// export const {} = booksSlice.actions;
 export default booksSlice.reducer;

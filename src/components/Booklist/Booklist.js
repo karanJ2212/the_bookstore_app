@@ -6,7 +6,7 @@ import { fetchBooksList } from '../../redux/books/booksSlice';
 
 export default function Booklist() {
   const dispatch = useDispatch();
-  // const [books] = useState([{ title: 'react', author: 'karan' }]);
+
   const storebooks = useSelector((state) => state.books.books);
 
   useEffect(() => {
