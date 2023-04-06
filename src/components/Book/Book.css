@@ -7,12 +7,15 @@
 .percent-complete {
   font-size: 2rem;
   color: #121212;
+  margin: 0;
+
 }
 
 .completed {
   font-size: 0.875rem;
   opacity: 0.5;
   color: #121212;
+  margin-top: 0;
 }
 
 .circular-progress-container {
