@@ -5,7 +5,7 @@ import { addBook } from '../../redux/books/booksSlice';
 
 export default function Addbook() {
   const dispatch = useDispatch();
-  const [book, setBook] = useState({ title: '', author: '' });
+  const [book, setBook] = useState({ title: '', author: '', category: '' });
 
   const handleChange = (event) => {
     setBook({ ...book, [event.target.name]: event.target.value });
@@ -13,10 +13,10 @@ export default function Addbook() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newBook = { itemID: uuidv4(), ...book };
+    const newBook = { item_id: uuidv4(), ...book };
 
     dispatch(addBook(newBook));
-    setBook({ title: '', author: '' });
+    setBook({ title: '', author: '', category: '' });
   };
   return (
     <div>
