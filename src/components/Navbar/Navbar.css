@@ -1,5 +1,5 @@
 .nav-bar {
-  padding: 24px 4%;
+  padding: 25px 4%;
   background-color: white;
   border-bottom: solid 1px #e8e8e8;
   display: flex;
@@ -9,7 +9,7 @@
 
 .nav-brand {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   font-weight: bold;
   color: #0290ff;
 }
@@ -32,7 +32,7 @@ li {
 .nav-link {
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #121212;
   letter-spacing: 2px;
 }
